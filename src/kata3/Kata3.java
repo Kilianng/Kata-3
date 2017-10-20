@@ -15,27 +15,10 @@ public class Kata3 {
      */
     public static void main(String[] args) {
         Histogram histogram = new Histogram();
-        histogram.increment("gmail.com");
-        histogram.increment("gmail.com");
-        histogram.increment("gmail.com");
-        histogram.increment("gmail.com");
-        histogram.increment("ulpgc.es");
-        histogram.increment("ulpgc.es");
-        histogram.increment("ulpgc.es");
-        histogram.increment("ull.es");
-        histogram.increment("ull.es");
-        histogram.increment("ull.es");
-        histogram.increment("ull.es");
-        histogram.increment("ull.es");
-        histogram.increment("hotmail.com");
-        histogram.increment("hotmail.com");
-        histogram.increment("hotmail.com");
-        histogram.increment("hotmail.com");
-        histogram.increment("hotmail.com");
-        histogram.increment("hotmail.com");
-        histogram.increment("hotmail.com");
-        histogram.increment("hotmail.com");
-        histogram.increment("hotmail.com");
+        histogram.increment("gmail.com",4);
+        histogram.increment("ulpgc.es",8);
+        histogram.increment("ull.es",3);
+        histogram.increment("hotmail.com",1);
         new HistogramDisplay(histogram).execute();
         
     }
